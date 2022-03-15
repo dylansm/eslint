@@ -1,0 +1,65 @@
+{
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true,
+    "es6": true,
+    "mocha": false,
+    "jasmine": false,
+    "jquery": false
+  },
+
+  "extends": [
+    "airbnb",
+    "eslint:recommended",
+    "plugin:import/recommended",
+    "plugin:jsx-a11y/recommended"
+  ],
+
+  "rules": {
+    "arrow-parens": [1, "as-needed", {
+      "requireForBlockBody": true
+    }],
+    "arrow-body-style": ["error", "as-needed"],
+    "import/no-extraneous-dependencies": 0,
+    "import/no-unresolved": 0,
+    "import/extensions": [ 2, {
+      "jsx": "never",
+      "js": "never"
+    }],
+    "jsx-a11y/label-has-associated-control": [ 2, {
+      "labelComponents": ["CustomLabel"],
+      "labelAttributes": ["inputLabel"],
+      "controlComponents": ["CustomInput"],
+      "assert": "either",
+      "depth": 3
+    }],
+    "max-len": 0,
+    "no-bitwise": 0,
+    "no-console": 0,
+    "no-labels": 0,
+    "no-multiple-empty-lines": [1, { "max": 1, "maxEOF": 0 }],
+    "no-nonoctal-decimal-escape": 0,
+    "no-plusplus": 0,
+    "no-restricted-syntax": ["error", "ForInStatement", "LabeledStatement", "WithStatement"],
+    "no-underscore-dangle": 0,
+    "no-unsafe-optional-chaining": 0,
+    "no-unused-labels": 0,
+    "no-unused-expressions": 0,
+    "object-curly-newline": [1, { "consistent": true }]
+  },
+
+  "settings": {
+    "react": {
+      "version": "999.999.999"
+    }
+  }
+}
